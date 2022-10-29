@@ -1,0 +1,93 @@
+/* Contenu de formulaire */
+
+.container-contact {
+
+    width:80%;
+    margin:auto;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom  : 60px;
+    overflow: hidden;
+}
+
+
+/* parti gauche : carte + adresse */
+
+iframe {
+/*     margin : 1em 0; */
+  /*   border-radius: 20px; */
+    z-index      : -1;
+}
+
+.adress {
+    align-items: center;
+    line-height: 2em;
+    padding-top: 15px;
+    font-size  : 15px;
+    color      : $main_color;
+}
+
+/* Parti droite : nom + email + message*/
+
+.field {
+    padding         : 1em 2rem;
+    outline         : none;
+    border          : 2px solid $main_color;
+    border-radius   : 15px;
+    background-color: rgb(255, 255, 255);
+    font-size       : 1.2rem;
+    margin-bottom   : 22px;
+    transition      : .3s;
+   
+}
+
+
+.field:focus {
+    background-color: #fff;
+    border          : 2px solid rgba(0, 0, 0, 0.47);
+}
+
+.field::placeholder {
+    font-size   : 1em;
+    padding-left: 20px;
+}
+
+.area {
+    min-height: 150px;
+    font-size : 1.2em;
+}
+
+.field area {
+
+    font-size   : 0.8em;
+    padding-left: 15px;
+}
+
+textarea {
+    resize : none;
+    padding: 1em 2 rem;
+}
+
+.btn {
+    width: 50%;
+    margin-left: 25%;
+    background-color: $main_color;
+    color: white;
+    border-radius: 10px;
+}
+
+@media (min-width: 720px) {
+    .field {
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+@media (max-width: 720px) {
+    .field {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .btn {
+        margin-bottom: 1em;
+    }
+}
